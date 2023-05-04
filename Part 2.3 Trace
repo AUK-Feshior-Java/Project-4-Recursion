@@ -1,0 +1,34 @@
+//Trace of Recursive Binary Search (4 pts.) Find 10
+        //a = { 2, 3, 5, 10, 16, 24, 32, 48, 96, 120, 240, 360, 800, 1600 }
+        /*
+
+        Iteration 1:
+            low = 0
+            mid = 6
+            high = 13
+            Returning mid as high
+            return recursiveBinarySearch(a, search, low, mid - 1);
+
+        Iteration 2:
+            low = 0
+            mid = 2
+            high = 5
+            Returning mid as low
+            return recursiveBinarySearch(a, search, mid + 1, high);
+
+        Iteration 3:
+            low = 3
+            mid = 4
+            high = 5
+            Returning mid as high
+            return recursiveBinarySearch(a, search, low, mid - 1);
+
+        Iteration 4:
+            low = 3
+            mid = 3
+            high = 3
+            Element is on third position
+            return mid;
+
+            4 iterations are needed to find the element 10 in the array.
+         */

@@ -1,0 +1,28 @@
+ //a = { 2, 3, 5, 10, 16, 24, 32, 48, 96, 120, 240, 360, 800, 1600 }
+ /* Find 150
+        Iteration 1:
+            low = 0
+            high = 13
+            middle = 6
+            return recursiveBinarySearch(a, search, mid + 1, high);
+
+        Iteration 2:
+            low = 7
+            high = 13
+            middle = 10
+            return recursiveBinarySearch(a, search, low, mid - 1);
+
+        Iteration 3:
+        low = 7
+        high = 9
+        middle = 8
+        return recursiveBinarySearch(a, search, mid + 1, high);
+
+        Iteration 4:
+        low = 9
+        high = 9
+        middle  = 9
+        Return -1 to indicate that the number was not found in the array.
+
+        4 iterations are needed to indicate that 150 is not in the array.
+         */
